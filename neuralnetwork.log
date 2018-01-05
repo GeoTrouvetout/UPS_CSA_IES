@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.20)  5 JAN 2018 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.20)  5 JAN 2018 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,23 +493,29 @@ e
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 32.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 32.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./neuralnetwork.aux) ) 
 Here is how much of TeX's memory you used:
- 14424 strings out of 492985
- 297011 string characters out of 6138637
- 340616 words of memory out of 5000000
- 17730 multiletter control sequences out of 15000+600000
+ 14564 strings out of 492985
+ 299232 string characters out of 6138637
+ 384765 words of memory out of 5000000
+ 17870 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,73p,840b,917s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,7n,73p,840b,922s stack positions out of 5000i,500n,10000p,200000b,80000s
 </u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on neuralnetwork.pdf (1 page, 16215 bytes).
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb>
+Output written on neuralnetwork.pdf (1 page, 33127 bytes).
 PDF statistics:
- 15 PDF objects out of 1000 (max. 8388607)
- 10 compressed objects within 1 object stream
+ 23 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
