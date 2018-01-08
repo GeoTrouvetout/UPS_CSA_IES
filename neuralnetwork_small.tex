@@ -1,0 +1,69 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\usetikzlibrary{matrix,positioning,fit}
+\usepackage[export]{adjustbox}
+\usepackage{tcolorbox}
+
+
+	
+\def\layersep{2.5cm}
+%\pagestyle{empty}
+
+\begin{document}
+	
+	\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+	\tikzstyle{every pin edge}=[<-,shorten <=1pt]
+	\tikzstyle{neuron}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
+	\tikzstyle{input neuron}=[neuron, fill=green!50];
+	\tikzstyle{output neuron}=[neuron, fill=red!50];
+	\tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+	\tikzstyle{annot} = [text width=4em, text centered]
+	
+	\pgfmathsetmacro{\nIn}{2}
+	\pgfmathsetmacro{\nHa}{3}
+	\pgfmathsetmacro{\nHb}{7}
+	\pgfmathsetmacro{\nHc}{5}
+	\pgfmathsetmacro{\nOut}{2}
+	
+	% Draw the input layer nodes
+	\foreach \name / \y in {1,...,\nIn}
+	% This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+	\node[input neuron, pin=left:$x_\y$] (I-\name) at (0,-\y) {};
+	
+	% Draw the hidden layer nodes
+	\foreach \name / \y in {1,...,\nHa}
+	\path[yshift=0cm]
+	node[hidden neuron] (Ha-\name) at (\layersep,-\y cm) {};
+	\coordinate (Ha) at (\layersep, \nHa/2 cm );
+	
+
+	% Draw the output layer node
+	\foreach \name / \y in {1,...,\nOut}
+	\path[yshift=0cm]
+	node[output neuron, pin={[pin edge={->}]right:$y_\name$}, right of=NodeHb] (O-\name) at (\layersep,-\y cm) {};
+%	\node[output neuron,pin={[pin edge={->}]right:y}, right of=H2-3] (O) {};
+	
+	% Connect every node in the input layer with every node in the
+	% hidden layer.
+	\foreach \source in {1,...,\nIn}
+	\foreach \dest in {1,...,\nHa}
+	\path (I-\source) edge (Ha-\dest);
+
+	
+	\foreach \source in {1,...,\nHa}
+	\foreach \dest in {1,...,\nOut}
+	\path (Ha-\source) edge (O-\dest);
+	
+	
+	% Annotate the layers
+	\node[annot,above of=Ha-1, node distance=1cm] (hl) {Hidden layer 1};
+	\node[annot,above of=I-1, node distance=1cm] {Input layer};
+	\node[annot,above of=O-1, node distance=1cm] {Output layer};
+	%\node[annot,below of=I-\nIn, node distance=1cm] {$\mathbf{x}$};
+	%\node[annot,below of=O-\nOut, node distance=1cm] {$\mathbf{y}$};
+	
+	\end{tikzpicture}
+	
+	
+\end{document}

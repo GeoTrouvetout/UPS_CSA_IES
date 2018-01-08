@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.20)  5 JAN 2018 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.20)  5 JAN 2018 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**neural.tex
-(./neural.tex
+**neuralnetwork_small.tex
+(./neuralnetwork_small.tex
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texmf-dist/tex/latex/standalone/standalone.cls
@@ -413,8 +413,9 @@ Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box47
 \tcb@out=\write4
 \tcb@record@out=\write5
-) (./neural.aux)
-\openout1 = `neural.aux'.
+)
+(./neuralnetwork_small.aux)
+\openout1 = `neuralnetwork_small.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -428,8 +429,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
@@ -499,20 +499,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 32.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./neural.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./neuralnetwork_small.aux
+) ) 
 Here is how much of TeX's memory you used:
- 14403 strings out of 492985
- 296642 string characters out of 6138637
- 331846 words of memory out of 5000000
- 17709 multiletter control sequences out of 15000+600000
+ 14421 strings out of 492985
+ 297059 string characters out of 6138637
+ 333846 words of memory out of 5000000
+ 17727 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,73p,833b,933s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb>
-Output written on neural.pdf (1 page, 25586 bytes).
+ 55i,7n,73p,846b,922s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on neuralnetwork_small.pdf (1 page, 29324 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
