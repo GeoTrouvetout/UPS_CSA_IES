@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.20)  5 JAN 2018 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.20)  14 JAN 2018 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -413,36 +413,97 @@ Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box47
 \tcb@out=\write4
 \tcb@record@out=\write5
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks31
+\ex@=\dimen161
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen162
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count115
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count116
+\leftroot@=\count117
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count118
+\DOTSCASE@=\count119
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box48
+\strutbox@=\box49
+\big@size=\dimen163
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count120
+\c@MaxMatrixCols=\count121
+\dotsspace@=\muskip10
+\c@parentequation=\count122
+\dspbrk@lvl=\count123
+\tag@help=\toks32
+\row@=\count124
+\column@=\count125
+\maxfields@=\count126
+\andhelp@=\toks33
+\eqnshift@=\dimen164
+\alignsep@=\dimen165
+\tagshift@=\dimen166
+\tagwidth@=\dimen167
+\totwidth@=\dimen168
+\lineht@=\dimen169
+\@envbody=\toks34
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks35
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
 ) (./CNN.aux)
 \openout1 = `CNN.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 ABD: EveryShipout initializing macros
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
-\scratchdimen=\dimen161
-\scratchbox=\box48
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count118
-\MPscratchDim=\dimen162
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count127
+\scratchdimen=\dimen170
+\scratchbox=\box50
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen171
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks37
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -490,27 +551,23 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\hofsg=\skip43
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 155.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 155.
+\hofsg=\skip46
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./CNN.aux) ) 
 Here is how much of TeX's memory you used:
- 14698 strings out of 492985
- 300862 string characters out of 6138637
- 380906 words of memory out of 5000000
- 18004 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 15372 strings out of 492985
+ 308565 string characters out of 6138637
+ 393410 words of memory out of 5000000
+ 18654 multiletter control sequences out of 15000+600000
+ 5021 words of font info for 19 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,73p,830b,727s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,7n,73p,850b,727s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/font
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr7.pfb>
-Output written on CNN.pdf (1 page, 30833 bytes).
+Output written on CNN.pdf (1 page, 31510 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

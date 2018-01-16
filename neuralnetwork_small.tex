@@ -24,7 +24,7 @@
 	\pgfmathsetmacro{\nHa}{3}
 	\pgfmathsetmacro{\nHb}{7}
 	\pgfmathsetmacro{\nHc}{5}
-	\pgfmathsetmacro{\nOut}{2}
+	\pgfmathsetmacro{\nOut}{1}
 	
 	% Draw the input layer nodes
 	\foreach \name / \y in {1,...,\nIn}
@@ -41,7 +41,8 @@
 	% Draw the output layer node
 	\foreach \name / \y in {1,...,\nOut}
 	\path[yshift=0cm]
-	node[output neuron, pin={[pin edge={->}]right:$y_\name$}, right of=NodeHb] (O-\name) at (\layersep,-\y cm) {};
+	node[output neuron, pin={[pin edge={->}]right:$y$}, right of=NodeHb] (O-\name) at (\layersep,-\y cm) {};
+%	node[output neuron, pin={[pin edge={->}]right:$y_\name$}, right of=NodeHb] (O-\name) at (\layersep,-\y cm) {};
 %	\node[output neuron,pin={[pin edge={->}]right:y}, right of=H2-3] (O) {};
 	
 	% Connect every node in the input layer with every node in the

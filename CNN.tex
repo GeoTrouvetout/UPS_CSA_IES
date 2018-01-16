@@ -4,8 +4,10 @@
 \usetikzlibrary{matrix,positioning,fit}
 \usepackage[export]{adjustbox}
 \usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage{relsize}
 
-
+%\tikzset{	font={\fontsize{10pt}{12}\selectfont}}
 
 
 \begin{document}
@@ -14,6 +16,10 @@
 	\begin{tikzpicture}[scale=0.85] % le scale permet que le texte soit un peu plus gros, car il n'est pas impacté...
 	\newlength{\hofsg}
 	\settoheight{\hofsg}{}  
+
+%    \tikzstyle{every node}=[line width=]
+
+
 	
 	
 	\newcommand{\drawcube}[5]{
@@ -37,12 +43,12 @@
 		\coordinate (G) at (\Width+\Dex,\Height+\Dey);
 		\coordinate (H) at (\Width+\Dex,0+\Dey);
 		
-		\draw[gray,fill=cyan!5,opacity=\Opacity] (E) -- (F) -- (G) -- (H) -- cycle;% Back Face
-		\draw[gray,fill=cyan!5,opacity=\Opacity] (D) -- (C) -- (G) -- (H) -- cycle;% Left Face
-		\draw[gray,fill=cyan!5,opacity=\Opacity] (A) -- (D) -- (H) -- (E) -- cycle;% Bottom Face
-		\draw[gray,fill=cyan!5,opacity=\Opacity] (A) -- (B) -- (F) -- (E) -- cycle;% Right Face
-		\draw[gray,fill=cyan!5,opacity=\Opacity] (B) -- (C) -- (G) -- (F) -- cycle;% Top Face
-		\draw[gray,fill=cyan!5,opacity=\Opacity] (A) -- (B) -- (C) -- (D) -- cycle;% Front Face   
+		\draw[black!85,fill=cyan!5,opacity=\Opacity, line width=1] (E) -- (F) -- (G) -- (H) -- cycle;% Back Face
+		\draw[black!85,fill=cyan!5,opacity=\Opacity, line width=1] (D) -- (C) -- (G) -- (H) -- cycle;% Left Face
+		\draw[black!85,fill=cyan!5,opacity=\Opacity, line width=1] (A) -- (D) -- (H) -- (E) -- cycle;% Bottom Face
+		\draw[black!85,fill=cyan!5,opacity=\Opacity, line width=1] (A) -- (B) -- (F) -- (E) -- cycle;% Right Face
+		\draw[black!85,fill=cyan!5,opacity=\Opacity, line width=1] (B) -- (C) -- (G) -- (F) -- cycle;% Top Face
+		\draw[black!85,fill=cyan!5,opacity=\Opacity, line width=1] (A) -- (B) -- (C) -- (D) -- cycle;% Front Face   
 	}
 	
 	\newcommand{\drawsmallcube}[9]{
@@ -111,33 +117,33 @@
 	\pgfmathsetmacro{\pronfm}{0.2}%32
 	
 	\pgfmathsetmacro{\offseta}{0}%5
-	\pgfmathsetmacro{\offsetb}{150}%5
-	\pgfmathsetmacro{\offsetc}{260}%5
-	\pgfmathsetmacro{\offsetd}{360}%5
-	\pgfmathsetmacro{\offsete}{450}%5
-	\pgfmathsetmacro{\offsetf}{520}%5
-	\pgfmathsetmacro{\offsetg}{575}%5
-	\pgfmathsetmacro{\offseth}{645}%5
+	\pgfmathsetmacro{\offsetb}{135}%5
+	\pgfmathsetmacro{\offsetc}{240}%5
+	\pgfmathsetmacro{\offsetd}{335}%5
+	\pgfmathsetmacro{\offsete}{420}%5
+	\pgfmathsetmacro{\offsetf}{502.5}%5
+	\pgfmathsetmacro{\offsetg}{570}%5
+	\pgfmathsetmacro{\offseth}{642.5}%5
 	\pgfmathsetmacro{\offseti}{725}%5
-	\pgfmathsetmacro{\offsetj}{800}%5
-	\pgfmathsetmacro{\offsetk}{875}%5
-	\pgfmathsetmacro{\offsetl}{950}%5
-	\pgfmathsetmacro{\offsetm}{930}%5
+	\pgfmathsetmacro{\offsetj}{810}%5
+	\pgfmathsetmacro{\offsetk}{890}%5
+	\pgfmathsetmacro{\offsetl}{980}%5
+	\pgfmathsetmacro{\offsetm}{950}%5
 	
 	\pgfmathsetmacro{\featang}{25}%4
-	\pgfmathsetmacro{\featanga}{20}%4
-	\pgfmathsetmacro{\featangb}{20}%4
-	\pgfmathsetmacro{\featangc}{20}%4
-	\pgfmathsetmacro{\featangd}{20}%4
-	\pgfmathsetmacro{\featange}{20}%4
-	\pgfmathsetmacro{\featangf}{20}%4
-	\pgfmathsetmacro{\featangg}{20}%4
-	\pgfmathsetmacro{\featangh}{20}%4
-	\pgfmathsetmacro{\featangi}{20}%4
-	\pgfmathsetmacro{\featangj}{20}%4
+	\pgfmathsetmacro{\featanga}{15}%4
+	\pgfmathsetmacro{\featangb}{15}%4
+	\pgfmathsetmacro{\featangc}{15}%4
+	\pgfmathsetmacro{\featangd}{15}%4
+	\pgfmathsetmacro{\featange}{15}%4
+	\pgfmathsetmacro{\featangf}{15}%4
+	\pgfmathsetmacro{\featangg}{15}%4
+	\pgfmathsetmacro{\featangh}{15}%4
+	\pgfmathsetmacro{\featangi}{15}%4
+	\pgfmathsetmacro{\featangj}{15}%4
 	\pgfmathsetmacro{\featangk}{20}%4
 	\pgfmathsetmacro{\featangl}{20}%4
-	\pgfmathsetmacro{\featangm}{20}%4
+	\pgfmathsetmacro{\featangm}{25}%4
 	% \begin{scope}[xshift=0, yshift=150]
 	% \drawcube{\fa}{\fa}{0}{30}{0.5}
 	% % \node[] at (\fa/2,-0.5) {512};
@@ -151,8 +157,8 @@
 	% \node[] at (\fa/2,-0.5) {512};
 	% \node[] at (-0.5,\fa/2) {512};
 	% \node[] at (0,\fa+0.5) {4};
-	\node[] at (\feata/2,-0.5) {(1536x1536x5)};
-	\node[] at (\feata/2,\feata/2) {$Py(X)$};
+	\node[] at (\feata/2,-0.5) {\textbf{(1536x1536x5)}};
+	\node[] at (\feata/2,\feata/2) {$\mathbf{Py(X)}$};
 	\node at (\feata/2,\feata/4) [draw,gray, fill=black!1,opacity=0.8, name=rect11, rectangle, minimum width=15,minimum height=15, label=north:5, label=west:5] {};
 	%\drawsmallcube{0.5}{0.5}{\pronff}{30}{0.5}{1.75}{1.75}{5}{5}{rect304}
 	\end{scope}   
@@ -169,7 +175,7 @@
 	% \node[] at (\fb/2,-0.5) {256};
 	% \node[] at (-0.5,\fb/2) {256};
 	% \node[] at (0.,\fb+0.5) {32};
-	\node[] at (\featb/2,-0.5) {(768x768x32)};
+	\node[] at (\featb/2,-0.5) {(\textbf{768x768x32)}};
 	
 	\node at (\featb/2,\featb/4) [draw, gray,fill=black!1,opacity=0.8, name=rect12, rectangle, minimum width=1,minimum height=1] {};
 	
@@ -192,7 +198,7 @@
 	% \node[] at (\fc/2,-0.5) {128};
 	% \node[] at (-0.5,\fc/2) {128};
 	% \node[] at (0.,\fc+.5) {32};
-	\node[] at (\featc/2,-0.5) {(384x384x32)};
+	\node[] at (\featc/2,-0.5) {\textbf{(384x384x32)}};
 	\node at (\featc/1.5,\featc/1.5) [draw, gray,fill=black!1,opacity=0.8, name=rect22, rectangle, minimum width=0.1,minimum height=0.1] {};
 	\node at (\featc/1.5,\featc/3) [draw, gray, fill=black!1,opacity=0.8, name=rect31, rectangle, minimum width=15,minimum height=15, label=south:5, label=west:5] {};
 	\end{scope}   
@@ -210,7 +216,7 @@
 	% \node[] at (\fd/2,-0.5) {64};
 	% \node[] at (-0.5,\fd/2) {64};
 	% \node[] at (0.,\fd+0.5) {64};
-	\node[] at (\featd/2,-0.5) {(192x192x64)};
+	\node[] at (\featd/2,-0.5) {\textbf{(192x192x64)}};
 	
 	\node at (\featd/1.5,\featd/4) [draw, gray, fill=black!1,opacity=0.8, name=rect32, rectangle, minimum width=0.01, minimum height=0.01] {};
 	\node at (\featd/3.75,\featd/1.5) [draw, gray, fill=black!1,opacity=0.8, name=rect41, rectangle, minimum width=15, minimum height=15, label=north:5, label=west:5] {};
@@ -232,7 +238,7 @@
 	% \node[] at (\fe/2,-0.5) {32};
 	% \node[] at (-0.5,\fe/2) {32};
 	% \node[] at (0.,\fe+.5) {128};
-	\node[] at (\feate/2,-0.5) {(96x96x128)};
+	\node[] at (\feate/2,-0.5) {\textbf{(96x96x128)}};
 	\node at (\feate/3.75,\feate/1.5) [draw, gray, fill=black!1,opacity=0.8, name=rect42, rectangle, minimum width=0.01,minimum height=0.01] {};
 	\node at (\feate/1.75,\feate/3.75) [draw, gray, fill=black!1,opacity=0.8, name=rect51, rectangle, minimum width=15,minimum height=15] {};
 	\end{scope}   
@@ -245,7 +251,7 @@
 	% \node[] at (\fd/2,-0.5) {64};
 	% \node[] at (-0.5,\fd/2) {64};
 	% \node[] at (0.,\fd+.5) {64};
-	\node[] at (\featf/2,-0.5) {(48x48x256)};
+	\node[] at (\featf/2,-0.5) {\textbf{(48x48x256)}};
 	\node at (\featf/1.75,\featf/3.75) [draw, gray, fill=black!1,opacity=0.8, name=rect52, rectangle, minimum width=0.01,minimum height=0.01] {};
 	\node at (\featf/1.75,\featf/1.5) [draw,gray, fill=black!1,opacity=0.8, name=rect61, rectangle, minimum width=0.01,minimum height=0.01] {};
 	\end{scope}
@@ -256,7 +262,7 @@
 	% \node[] at (\fc/2,-0.5) {128};
 	% \node[] at (-0.5,\fc/2) {128};
 	% \node[] at (0.,\fc+.5) {32};
-	\node[] at (\featg/2,-0.5) {(96x96x128)};
+	\node[] at (\featg/2,-0.5) {\textbf{(96x96x128)}};
 	\node at (\featg/1.75,\featg/1.5) [draw, gray, fill=black!1,opacity=0.8, name=rect62, rectangle, minimum width=15,minimum height=15, label=north:5, label=east:5] {};
 	\node at (\featg/3.5,\featg/3.5) [draw, gray, fill=black!1,opacity=0.8, name=rect71, rectangle, minimum width=0.01,minimum height=0.01] {};
 	\end{scope}    
@@ -269,7 +275,7 @@
 	% \node[] at (\fc/2,-0.5) {128};
 	% \node[] at (-0.5,\fc/2) {128};
 	% \node[] at (0.,\fc+.5) {16};
-	\node[] at (\feath/2,-0.5) {(192x192x64)};
+	\node[] at (\feath/2,-0.5) {\textbf{(192x192x64)}};
 	\node at (\feath/3.5,\feath/3.5) [draw, gray, fill=black!1,opacity=0.8, name=rect72, rectangle, minimum width=15,minimum height=15, label=north:5, label=east:5] {};
 	\node at (\feath/1.75,\feath/1.5) [draw, gray, fill=black!1,opacity=0.8, name=rect81, rectangle, minimum width=0.01,minimum height=0.01] {};
 	\end{scope}  
@@ -281,7 +287,7 @@
 	% \node[] at (\fc/2,-0.5) {128};
 	% \node[] at (-0.5,\fc/2) {128};
 	% \node[] at (0.,\fc+.5) {8};
-	\node[] at (\feati/2,-0.5) {(384x384x32)};
+	\node[] at (\feati/2,-0.5) {\textbf{(384x384x32)}};
 	\node at (\feati/1.75,\feati/1.5) [draw, gray, fill=black!1,opacity=0.8, name=rect82, rectangle, minimum width=15,minimum height=15, label=north:5, label=east:5] {};
 	\node at (\feati/1.5,\feati/3.5) [draw, gray, fill=black!1,opacity=0.8, name=rect91, rectangle, minimum width=0.01,minimum height=0.01] {};
 	\end{scope}
@@ -292,7 +298,7 @@
 	\drawcube{\featj}{\featj}{\pronfj}{\featangj}{0.5}
 	% \node[] at (\fc/2,\fc+0.5) {128};
 	% \node[] at (\fc+0.5,\fc/2) {128};
-	\node[] at (\featj/2,-0.5) {(384x384x16)};
+	\node[] at (\featj/2,-0.5) {\textbf{(384x384x16)}};
 	\node[name=beg1] at (0,0) {};
 	\node[name=beg2] at (\featj,0) {};
 	\node[name=beg3] at (0,\featj) {};
@@ -308,7 +314,7 @@
 	\drawcube{\featk}{\featk}{\pronfk}{\featangk}{0.5}
 	% \node[] at (\fc/2,\fc+0.5) {128};
 	% \node[] at (\fc+0.5,\fc/2) {128};
-	\node[] at (\featk/2,-0.5) {(384x384x8)};
+	\node[] at (\featk/2,-0.5) {\textbf{(384x384x8)}};
 	\node[name=beg1] at (0,0) {};
 	\node[name=beg2] at (\featk,0) {};
 	\node[name=beg3] at (0,\featk) {};
@@ -323,7 +329,7 @@
 	\drawcube{\featl}{\featl}{\pronfl}{\featangl}{0.5}
 	% \node[] at (\fc/2,\fc+0.5) {128};
 	% \node[] at (\fc+0.5,\fc/2) {128};
-	\node[] at (\featl/2,-0.5) {(384x384x3)};
+	\node[] at (\featl/2,-0.5) {\textbf{(384x384x3)}};
 	\node[name=beg1] at (0,0) {};
 	\node[name=beg2] at (\featl,0) {};
 	\node[name=beg3] at (0,\featl) {};
@@ -359,12 +365,12 @@
 	\drawcube{\featm}{\featm}{\pronfm}{\featangm}{0.5}
 	% \node[] at (\fa/2,\fa+0.5) {512};
 	% \node[] at (-0.5,\fa/2) {512};
-	\node[] at (\featm/2,\featm/2-0.5) {(1536x1536x3)};
+	\node[] at (\featm/2,\featm/2-0.5) {\textbf{(1536x1536x3)}};
 	\node[name=end1] at (0,0) {};
 	\node[name=end2] at (\featm,0) {};
 	\node[name=end3] at (0,\featm) {};
 	\node[name=end4] at (\featm,\featm) {};
-	\node[] at (\featm/2,\featm/2) {$Y$};
+	\node[] at (\featm/2,\featm/2) {$\mathbf{Y}$};
 	\end{scope}
 	
 	\draw[dashed] (beg1) -- (end1);

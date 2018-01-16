@@ -20,7 +20,7 @@
 	\tikzstyle{hidden neuron}=[neuron, fill=blue!50];
 	\tikzstyle{annot} = [text width=4em, text centered]
 	
-	\pgfmathsetmacro{\nIn}{3}
+	\pgfmathsetmacro{\nIn}{2}
 	\pgfmathsetmacro{\nHa}{3}
 	\pgfmathsetmacro{\nHb}{7}
 	\pgfmathsetmacro{\nHc}{5}
@@ -36,6 +36,7 @@
 	% Draw the output layer node
 	\foreach \name / \y in {1,...,\nOut}
 	\path[yshift=0cm]
+	%node[output neuron, pin={[pin edge={->}]right:$y$}, right of=NodeHb] (O-\name) at (0*\layersep,-\y cm) {};
 	node[output neuron, pin={[pin edge={->}]right:$y_\name$}, right of=NodeHb] (O-\name) at (0*\layersep,-\y cm) {};
 %	\node[output neuron,pin={[pin edge={->}]right:y}, right of=H2-3] (O) {};
 	

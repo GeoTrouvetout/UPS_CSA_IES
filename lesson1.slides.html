@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -11906,34 +11906,24 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Introduction-to-deep-learning">Introduction to deep learning<a class="anchor-link" href="#Introduction-to-deep-learning">&#182;</a></h1><h2 id="MASTER-CSA-:-Introduction-to-Embedded-systems">MASTER CSA : Introduction to Embedded systems<a class="anchor-link" href="#MASTER-CSA-:-Introduction-to-Embedded-systems">&#182;</a></h2><hr>
-<h6 id="author-:-Geoffrey-Roman-Jimenez">author : Geoffrey Roman Jimenez<a class="anchor-link" href="#author-:-Geoffrey-Roman-Jimenez">&#182;</a></h6><h6 id="Date-:-19/03/18">Date : 19/03/18<a class="anchor-link" href="#Date-:-19/03/18">&#182;</a></h6>
-</div>
-</div>
-</div><aside class="notes">
+<h6 id="author-:-Geoffrey-Roman-Jimenez">author : Geoffrey Roman Jimenez<a class="anchor-link" href="#author-:-Geoffrey-Roman-Jimenez">&#182;</a></h6><h6 id="Date-:-19/03/18">Date : 19/03/18<a class="anchor-link" href="#Date-:-19/03/18">&#182;</a></h6><p><em>"an overall of what is <strong>deep learning</strong>."</em></p>
 
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this course we will see an overall of what is "deep learning".</p>
-
-</div>
-</div>
-</div>
-</aside></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="1---What-is-it-?">1 - What is it ?<a class="anchor-link" href="#1---What-is-it-?">&#182;</a></h6><p><strong>Deep-learning</strong> is a branch of Machine-learning.</p>
-<p>To understand <strong>deep-learning</strong> and machine-learning</p>
+<h6 id="1---What-is-it-?">1 - What is it ?<a class="anchor-link" href="#1---What-is-it-?">&#182;</a></h6><p><strong>Deep-learning</strong> is a branch of Machine-learning which is a type of Artificial intelligence.</p>
+<p>Machine-learning aimed at contruct algorithm that can performed a task without explicitly programming it to do so.</p>
 <ul>
 <li>Machine-learning aimed at learning a task to a machine. <ul>
 <li><strong>Deep-learning</strong> aimed at doing the same</li>
 </ul>
 </li>
 </ul>
-<hr>
+<p><strong>Deep-learning</strong> is based on the <em>learning data representation</em> task.</p>
 
 </div>
 </div>
@@ -11942,28 +11932,62 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A task in data science can generally be embedded in 4 types:</p>
-<ol>
-<li>Classification
-<em>in which category can I classified an example (for instance, an image represent a cat</em></li>
-<li>Prediction / Regression
-**</li>
-<li>Clustering
-<code>cluster group of examples together</code></li>
-<li>dimension reduction
-<em>encodage</em></li>
+<h4 id="A-task-in-data-science">A task in data science<a class="anchor-link" href="#A-task-in-data-science">&#182;</a></h4><ol>
+<li><strong>Data Classification/Clustering</strong><ul>
+<li>Classify or regroup data (images for example) 
+<img src="./catdogclassification.jpg" alt="Drawing" style="width: 600px;"/></li>
+</ul>
+</li>
 </ol>
 
 </div>
 </div>
-</div><section><section>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Data Prediction/Regression</strong><ul>
+<li>Modelling relationship between Data<br/> 
+ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/1000px-Linear_regression.svg.png" alt="Drawing" style="width: 600px;"/></li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Data representation </strong><ul>
+<li><code>Dimension reduction, encodage</code>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Autoencoder_structure.png" alt="Drawing" style="width: 600px;"/></li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2---How-does-it-works">2 - How does it works<a class="anchor-link" href="#2---How-does-it-works">&#182;</a></h2><h3 id="2.1---Artificial-Neural-(AN)">2.1 - Artificial Neural (AN)<a class="anchor-link" href="#2.1---Artificial-Neural-(AN)">&#182;</a></h3><p><img src="neural.jpg" alt="Drawing" style="width: 300px;"/></p>
-<p>$$ y = \mathcal N~(\mathbf{x}, \mathbf{w}, b) = \varphi \Big( \sum_{i}{x_i . w_i} ~~ + b\Big)$$</p>
-<p>with $\varphi$ is a non-linearity function such as $tanh$ or $sigmoid$</p>
+<p>$$ y = \mathcal N~(\mathbf{x}, \mathbf{w}, b) = \varphi \Bigg( 
+\begin{bmatrix}
+w_{1}   &amp; \dots  &amp;   w_{n} \\
+\end{bmatrix}
+.
+\begin{bmatrix} x_1 \\ \vdots \\ x_n \end{bmatrix}  + 
+b
+\Bigg) = \varphi \Big( \sum_{i}{x_i . w_i} ~~ + b\Big)$$</p>
+<p>with $\varphi$ is a non-linearity function such as $tanh$ or $relu$</p>
+<p><img src="relu.png" alt="Drawing" style="width: 300px;"/></p>
 
 </div>
 </div>
@@ -11972,21 +11996,20 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.2---Artificial-Neural-Network-(ANN)">2.2 - Artificial Neural Network (ANN)<a class="anchor-link" href="#2.2---Artificial-Neural-Network-(ANN)">&#182;</a></h3><h4 id="2.2.1-Small-one">2.2.1 Small one<a class="anchor-link" href="#2.2.1-Small-one">&#182;</a></h4><p><img src="neuralnetwork_tiny.jpg" alt="Drawing" style="width: 300px;"/></p>
-<p>the output $\mathbf y = \begin{bmatrix} y_1 \\ y_2 \end{bmatrix}$ can be written as:</p>
-<p>$ \mathbf y = 
-\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = 
+<h3 id="2.2---Artificial-Neural-Network-(ANN)">2.2 - Artificial Neural Network (ANN)<a class="anchor-link" href="#2.2---Artificial-Neural-Network-(ANN)">&#182;</a></h3><h4 id="2.2.1-Linear-Model-Architecture-(LMA)-:--a-network-without-hidden-layer">2.2.1 Linear Model Architecture (LMA) :  a network without hidden layer<a class="anchor-link" href="#2.2.1-Linear-Model-Architecture-(LMA)-:--a-network-without-hidden-layer">&#182;</a></h4><p><img src="neuralnetwork_tiny.jpg" alt="Drawing" style="width: 300px;"/></p>
+<p>the output $ y $ can be written as:</p>
+<p>$ y = 
 \varphi \Bigg( 
 \begin{bmatrix}
-w_{1,1}       &amp;   w_{1,2} &amp; w_{1,3}  \\
-w_{2,1}       &amp;   w_{2,2} &amp; w_{2,3}  \\ 
+w_{1}    &amp;   w_{2} \\
 \end{bmatrix}
 .
-\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}  + 
-\begin{bmatrix} b_1 \\ b_2 \end{bmatrix} 
+\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}  + 
+b
 \Bigg)
 $</p>
-<hr>
+<p>which can be written in a more compact way</p>
+<p>$y = \varphi ( \mathbf W.\mathbf x + b)$</p>
 
 </div>
 </div>
@@ -11995,34 +12018,25 @@ $</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.2---Artificial-Neural-Network-(ANN)">2.2 - Artificial Neural Network (ANN)<a class="anchor-link" href="#2.2---Artificial-Neural-Network-(ANN)">&#182;</a></h3><h4 id="2.2.2-With-one-hidden-layer">2.2.2 With one hidden layer<a class="anchor-link" href="#2.2.2-With-one-hidden-layer">&#182;</a></h4><p><img src="neuralnetwork_small.jpg" alt="Drawing" style="width: 400px;"/></p>
-<p>the output $\mathbf y = \begin{bmatrix} y_1 \\ y_2 \end{bmatrix}$ can be written as:</p>
-<p>$ \mathbf y = 
-\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = 
-\varphi \Bigg(
+<h3 id="2.2---Artificial-Neural-Network-(ANN)">2.2 - Artificial Neural Network (ANN)<a class="anchor-link" href="#2.2---Artificial-Neural-Network-(ANN)">&#182;</a></h3><h4 id="2.2.2-Shallow-Neural-Network-(SNN)--:--a-network-with-one-hidden-layer">2.2.2 Shallow Neural Network (SNN)  :  a network with one hidden layer<a class="anchor-link" href="#2.2.2-Shallow-Neural-Network-(SNN)--:--a-network-with-one-hidden-layer">&#182;</a></h4><p><img src="neuralnetwork_small.jpg" alt="Drawing" style="width: 400px;"/></p>
+<p>the output $y$ can be written as:</p>
+<p>$y =
 \begin{bmatrix}
-w_{1,1}       &amp;   w_{1,2}  &amp; w_{1,3}       \\
-w_{2,1}       &amp;   w_{2,2}  &amp; w_{2,3}    \\ 
-\end{bmatrix}
-.
+w_{out}^{1}       &amp;   w_{out}^2  &amp; w_{out}^{3}    \\ 
+\end{bmatrix}.
 \varphi \Bigg( 
 \begin{bmatrix}
 w_{1,1}       &amp;   w_{1,2}        \\
 w_{2,1}       &amp;   w_{2,2}      \\ 
 w_{3,1}       &amp;   w_{3,2}  \\
-\end{bmatrix}
-.
+\end{bmatrix}.
 \begin{bmatrix} x_1 \\ x_2 \end{bmatrix}  + 
 \begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix} 
-\Bigg)</p>
-<ul>
-<li>\begin{bmatrix} b_1 \\ b_2 \end{bmatrix} 
-\Bigg)
-$</li>
-</ul>
-<p>which can be written in a more compact way ;)</p>
-<p>$$ \mathbf{y} = \varphi ( \mathbf W.\mathbf x + \mathbf b)$$</p>
-<hr>
+\Bigg)+ b $</p>
+<p>Which can be written in a more compact way :</p>
+<p>$\mathbf{y} = \mathbf W_{out}. \varphi ( \mathbf W_{in}.\mathbf x + \mathbf b_{in}) + \mathbf b_{out}$</p>
+<p><em>Note:
+Unlike all layers in a Neural Network, the output layer neurons most commonly do not have an activation function (or you can think of them as having a linear identity activation function).</em></p>
 
 </div>
 </div>
@@ -12031,23 +12045,45 @@ $</li>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="2.2.1-A-more-deeper-one">2.2.1 A more deeper one<a class="anchor-link" href="#2.2.1-A-more-deeper-one">&#182;</a></h4><p><img src="neuralnetwork.jpg" alt="Drawing" style="width: 600px;"/></p>
-<p>more generally :</p>
-<p>$$ \mathbf{y}~(\mathbf{x}, {\mathbf{\mathcal W}}, \mathbf{B}) = \varphi \Bigg( \mathbf W_d . \varphi \bigg( \mathbf{W}_{d-1} . \varphi \Big( \mathbf W_{d-2} 
-~ \dots ~ 
-\varphi \big( \mathbf{W_{2}} . \varphi (\mathbf W_{1}.\mathbf x + \mathbf b_1) + \mathbf{b}_2 \big) \dots + \mathbf{b}_{d-2} \Big) + \mathbf{b}_{d-1} \bigg) + \mathbf{b}_d\Bigg)$$</p>
+<h4 id="2.2.1-A-more-deeper-one">2.2.1 A more deeper one<a class="anchor-link" href="#2.2.1-A-more-deeper-one">&#182;</a></h4><p><img src="neuralnetwork.jpg" alt="Drawing" style="width: 500px;"/></p>
+<p>${y}(\mathbf{x}, {\mathbf{\mathcal W}}, \mathbf{B}) = \mathbf W_4 . \varphi \bigg( \mathbf{W}_{3} . \varphi \Big( \mathbf{W}_{2} . \varphi (\mathbf W_{1}.\mathbf x + \mathbf b_1) + \mathbf{b}_2 \big) + \mathbf{b}_{3} \Big) + {b}_{4}$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="More-generally">More generally<a class="anchor-link" href="#More-generally">&#182;</a></h1><p>We can add as many inputs/layer/output as we want :</p>
+<p><img src="neuralnetwork_large.jpg" alt="Drawing" style="width: 600px;"/></p>
+<p>So in a general way we have :</p>
+<p>$\mathbf{y}(\mathbf{x}, {\mathbf{\mathcal W}}, \mathbf{B}) = \mathbf W_d . \varphi \bigg( \mathbf{W}_{d-1} . \varphi \Big( \mathbf W_{d-2}  \dots 
+\varphi \big( \mathbf{W}_{2} . \varphi (\mathbf W_{1}.\mathbf x + \mathbf b_1) + \mathbf{b}_2 \big) \dots + \mathbf{b}_{d-2} \Big) + \mathbf{b}_{d-1} \bigg) + \mathbf{b}_d$</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\mathbf{y}(\mathbf{x}, {\mathbf{\mathcal W}}, \mathbf{B}) = \mathbf W_d . \varphi \bigg( \mathbf{W}_{d-1} . \varphi \Big( \mathbf W_{d-2}  \dots 
+\varphi \big( \mathbf{W}_{2} . \varphi (\mathbf W_{1}.\mathbf x + \mathbf b_1) + \mathbf{b}_2 \big) \dots + \mathbf{b}_{d-2} \Big) + \mathbf{b}_{d-1} \bigg) + \mathbf{b}_d$</p>
 <p>with</p>
+<p>$\mathbf y  = \begin{pmatrix} y_1 \\ y_2 \\ \dots \\ y_{n_d}\end{pmatrix}$
+and 
+$\mathbf x  = \begin{pmatrix} x_1 \\ x_2 \\ \dots \\ y_{n_0}\end{pmatrix}$</p>
 <p>$\mathcal W = { \mathbf W_1, \mathbf W<em>2, ..., \mathbf W</em>{d-1}, \mathbf W_{d}}</p>
 
-<pre><code>~~
-and</code></pre>
+<pre><code>and</code></pre>
 <p>\mathbf B = { \mathbf b_1, \mathbf b<em>2, \dots , \mathbf b</em>{d-1}, \mathbf b_d }$</p>
 <p>$
 \mathbf W_k = \begin{pmatrix}
-w_{1,1}       &amp;   w_{1,2}       &amp; \dots &amp;   w_{1,n_{k-1}}       \\
-w_{2,1}       &amp;   w_{2,2}       &amp; \dots &amp;   w_{2,n_{k-1}}       \\
+w_{k(1,1)}       &amp;   w_{k(1,2)}       &amp; \dots &amp;   w_{k(1,n_{k-1})}       \\
+w_{k(2,1)}       &amp;   w_{k(2,2)}       &amp; \dots &amp;   w_{k(2,n_{k-1})}       \\
 \vdots  &amp;  \vdots   &amp;   \vdots  &amp; \vdots  \\   
-w_{n_k,1}       &amp;   w_{n_k,2}   &amp; \dots &amp;   w_{n_k,n_{k-1}}  \\
+w_{k(n_k,1)}       &amp;   w_{k(n_k,2)}   &amp; \dots &amp;   w_{k(n_k,n_{k-1})}  \\
 \end{pmatrix}
 ~~~~~~~ 
 \mathbf b_k = \begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_{n_{k-1}} \\ b_{n_k} \end{pmatrix}
@@ -12060,7 +12096,8 @@ $</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Training-an-ANN">Training an ANN<a class="anchor-link" href="#Training-an-ANN">&#182;</a></h3><p><a href="http://playground.tensorflow.org/#activation=tanh&amp;batchSize=10&amp;dataset=circle&amp;regDataset=reg-plane&amp;learningRate=0.03&amp;regularizationRate=0&amp;noise=0&amp;networkShape=4,2&amp;seed=0.32087&amp;showTestData=false&amp;discretize=false&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=classification&amp;initZero=false&amp;hideText=false">http://playground.tensorflow.org/#activation=tanh&amp;batchSize=10&amp;dataset=circle&amp;regDataset=reg-plane&amp;learningRate=0.03&amp;regularizationRate=0&amp;noise=0&amp;networkShape=4,2&amp;seed=0.32087&amp;showTestData=false&amp;discretize=false&amp;percTrainData=50&amp;x=true&amp;y=true&amp;xTimesY=false&amp;xSquared=false&amp;ySquared=false&amp;cosX=false&amp;sinX=false&amp;cosY=false&amp;sinY=false&amp;collectStats=false&amp;problem=classification&amp;initZero=false&amp;hideText=false</a></p>
+<h3 id="Training-an-ANN">Training an ANN<a class="anchor-link" href="#Training-an-ANN">&#182;</a></h3><p>So we have a</p>
+<p><a href="http://playground.tensorflow.org/">http://playground.tensorflow.org/</a></p>
 
 </div>
 </div>
@@ -12069,20 +12106,12 @@ $</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.3---Deep-Neural-Network-(DNN)">2.3 - Deep Neural Network (DNN)<a class="anchor-link" href="#2.3---Deep-Neural-Network-(DNN)">&#182;</a></h3><p>Deep Neural Network (DNN) is artificial Neural Network with</p>
+<h3 id="2.3---Deep-Neural-Network-(DNN)">2.3 - Deep Neural Network (DNN)<a class="anchor-link" href="#2.3---Deep-Neural-Network-(DNN)">&#182;</a></h3><p>Deep Neural Network (DNN) is Artificial Neural Network with numerous hidden layers.</p>
+<p><img src="https://indico.io/blog/wp-content/uploads/2015/08/googlenet.png" alt="Drawing" style="width: 600px;"/></p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$$ y = h~(X, W, b) = \varphi \Big( (\sum_{i}{x_i . w_i}) ~ + b\Big)$$</p>
-
-</div>
-</div>
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12093,12 +12122,39 @@ $</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Fourth-:-Go-deeper">Fourth : Go deeper<a class="anchor-link" href="#Fourth-:-Go-deeper">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VOC3huqHrss?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># libraries importation</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="kn">import</span> <span class="nn">tikzmagic</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">4</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">6</span>
+<span class="n">a</span><span class="o">+</span><span class="n">b</span>
 </pre></div>
 
 </div>
@@ -12111,42 +12167,17 @@ $</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[29]:</div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VOC3huqHrss?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+<div class="output_text output_subarea output_execute_result">
+<pre>10</pre>
 </div>
 
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fourth-:-Go-deeper">Fourth : Go deeper<a class="anchor-link" href="#Fourth-:-Go-deeper">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># libraries importation</span>
-<span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
-<span class="kn">import</span> <span class="nn">tikzmagic</span>
-<span class="o">%</span><span class="k">load_ext</span> tikzmagic
-</pre></div>
-
-</div>
 </div>
 </div>
 
@@ -12163,8 +12194,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/lib/js/head.min.js",
-      "reveal.js/js/reveal.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12179,9 +12210,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "reveal.js/lib/js/classList.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "reveal.js/plugin/notes/notes.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]

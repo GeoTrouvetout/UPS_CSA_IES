@@ -49,9 +49,11 @@
 	\coordinate (NodeHc) at (\layersep, \nHc/2 cm );
 	
 	% Draw the output layer node
-	\foreach \name / \y in {1,...,\nOut}
+	\foreach \name / \y in {1,...,\nOut}{
 	\path[yshift=0cm]
+	%node[output neuron, pin={[pin edge={->}]right:$y$}, right of=NodeHb] (O-\name) at (3*\layersep,-\y cm) {};
 	node[output neuron, pin={[pin edge={->}]right:$y_\name$}, right of=NodeHb] (O-\name) at (3*\layersep,-\y cm) {};
+}
 %	\node[output neuron,pin={[pin edge={->}]right:y}, right of=H2-3] (O) {};
 	
 	% Connect every node in the input layer with every node in the

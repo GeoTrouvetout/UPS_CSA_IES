@@ -1,0 +1,41 @@
+<style>
+max-width: 960px !important;
+.container {width: 99% !important; }
+</style>
+
+.CodeMirror pre {font-family: Monaco; font-size: 9pt;}
+
+
+/*body {*/
+/*background-color: #FFFFFF;*/
+/*}*/
+/*.reveal p {*/
+/*color: black;*/
+/*}*/
+/*.reveal ul, ol {*/
+/*color: black;*/
+/*}*/
+/*div.output_area pre {*/
+/*color: black;*/
+/*}*/
+/*div.output_stderr {*/
+/*background: #F00;*/
+/*}*/
+/*.reveal table th, .reveal table td {*/
+/*color: black;*/
+/*}*/
+
+/*[> Make the notebook cells take almost all available width <]*/
+/*.container {*/
+    /*width: 99% !important;*/
+/*}   */
+
+/* Prevent the edit cell highlight box from getting clipped;
+ * important so that it also works when cell is in edit mode*/
+/*div.cell.selected {*/
+    /*border-left-width: 1px !important;*/
+/*}*/
+
+
+
+
